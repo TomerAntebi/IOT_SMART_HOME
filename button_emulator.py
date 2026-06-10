@@ -2,7 +2,7 @@
 import time
 from mqtt_init import create_client, connect_and_loop
 
-TOPIC_MODE = "amiram/smart-room/control/mode"  # "auto" | "manual"
+TOPIC_MODE = "smart-home/control/mode"  # "auto" | "manual"
 
 def main():
     client = create_client("SR_button")
