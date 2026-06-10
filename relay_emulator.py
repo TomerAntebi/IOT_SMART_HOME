@@ -1,8 +1,8 @@
 # relay_emulator.py
 from mqtt_init import create_client, connect_and_loop
 
-TOPIC_RELAY_CMD = "amiram/smart-room/actuator/relay/cmd"
-TOPIC_RELAY_STATE = "amiram/smart-room/actuator/relay/state"
+TOPIC_RELAY_CMD = "smart-home/actuator/relay/cmd"
+TOPIC_RELAY_STATE = "smart-home/actuator/relay/state"
 
 relay_state = "OFF"
 
