@@ -7,7 +7,7 @@
 #   - Calculates system status (INFO / WARNING / ALARM)
 #   - Publishes status and alerts
 #   - Controls relay automatically in AUTO mode
-#   - Stores measurements and events in SQLite (smart_room.db)
+#   - Stores measurements and events in SQLite (smart_home.db)
 # -------------------------------------------------------------
 
 import json
@@ -19,11 +19,11 @@ from db import init_db, insert_measurement, insert_event
 # =========================
 # MQTT Topics (namespace)
 # =========================
-TOPIC_TELEMETRY   = "amiram/smart-room/telemetry"
-TOPIC_MODE        = "amiram/smart-room/control/mode"
-TOPIC_STATUS      = "amiram/smart-room/status"
-TOPIC_ALERTS      = "amiram/smart-room/alerts"
-TOPIC_RELAY_CMD   = "amiram/smart-room/actuator/relay/cmd"
+TOPIC_TELEMETRY   = "smart-home/telemetry"
+TOPIC_MODE        = "smart-home/control/mode"
+TOPIC_STATUS      = "smart-home/status"
+TOPIC_ALERTS      = "smart-home/alerts"
+TOPIC_RELAY_CMD   = "smart-home/actuator/relay/cmd"
 
 # =========================
 # Thresholds
