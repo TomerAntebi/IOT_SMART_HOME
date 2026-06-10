@@ -205,7 +205,7 @@ Network URL: http://192.168.x.x:8501
 ## 📁 מבנה הפרויקט
 
 ```
-Smart_Room_Monitor/
+Smart_Home_Monitor/
 │
 ├── 📄 dashboard.py              # ממשק המשתמש הראשי (Streamlit)
 ├── 📄 app_manager.py            # מנהל המערכת המרכזי
