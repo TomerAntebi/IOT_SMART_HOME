@@ -1,7 +1,7 @@
 # mqtt_init.py
 # -------------------------------------------------------------
 # Purpose:
-#   Create and initialize an MQTT client for the Smart Room Monitor project.
+#   Create and initialize an MQTT client for the Smart Home Monitor project.
 #   Provides a helper function to connect and start the network loop.
 # -------------------------------------------------------------
 
