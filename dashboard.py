@@ -14,9 +14,9 @@ from streamlit_autorefresh import st_autorefresh
 BROKER = "broker.hivemq.com"
 PORT = 1883
 
-TOPIC_STATUS = "amiram/smart-room/status"
-TOPIC_RELAY_STATE = "amiram/smart-room/actuator/relay/state"
-TOPIC_MODE = "amiram/smart-room/control/mode"
+TOPIC_STATUS = "smart-home/status"
+TOPIC_RELAY_STATE = "smart-home/actuator/relay/state"
+TOPIC_MODE = "smart-home/control/mode"
 
 MAX_POINTS = 180
 ROOMS_FILE = os.path.join(os.path.dirname(__file__), "rooms.json")
