@@ -5,7 +5,7 @@ import random
 
 from mqtt_init import create_client, connect_and_loop
 
-TOPIC_TELEMETRY = "amiram/smart-room/telemetry"
+TOPIC_TELEMETRY = "smart-home/telemetry"
 
 def main():
     client = create_client("SR_sensor")
