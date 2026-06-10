@@ -1,4 +1,4 @@
-# 🏠 Smart Room Monitor - IoT System
+# 🏠 Smart Home Monitor - IoT System
 
 <div align="center">
 
@@ -33,7 +33,7 @@
 
 ## 🎯 תיאור הפרויקט
 
-**Smart Room Monitor** היא מערכת IoT מתקדמת המאפשרת ניטור בזמן אמת של תנאי הסביבה בחדרים שונים. המערכת כוללת:
+**Smart Home Monitor** היא מערכת IoT מתקדמת המאפשרת ניטור בזמן אמת של תנאי הסביבה בחדרים שונים. המערכת כוללת:
 
 - 📊 **דשבורד אינטראקטיבי** - ממשק משתמש מודרני ונוח
 - 🔐 **מערכת התחברות** - אבטחה וניהול משתמשים
@@ -84,10 +84,10 @@
 ```bash
 # שכפול מהמאגר (אם יש)
 git clone <repository-url>
-cd Smart_Room_Monitor
+cd Smart_Home_Monitor
 
 # או פשוט עבור לתיקיית הפרויקט
-cd Smart_Room_Monitor
+cd Smart_Home_Monitor
 ```
 
 ### שלב 2: יצירת סביבה וירטואלית (מומלץ)
@@ -133,7 +133,7 @@ python init_db.py
 פתח טרמינל/Command Prompt ראשון:
 
 ```bash
-cd Smart_Room_Monitor
+cd Smart_Home_Monitor
 python sensor_emulator.py
 ```
 
@@ -148,7 +148,7 @@ python sensor_emulator.py
 פתח טרמינל שני:
 
 ```bash
-cd Smart_Room_Monitor
+cd Smart_Home_Monitor
 python app_manager.py
 ```
 
@@ -165,7 +165,7 @@ python app_manager.py
 פתח טרמינל שלישי:
 
 ```bash
-cd Smart_Room_Monitor
+cd Smart_Home_Monitor
 streamlit run dashboard.py
 ```
 
@@ -275,11 +275,11 @@ Smart_Room_Monitor/
 
 | Topic | Direction | תיאור |
 |-------|-----------|-------|
-| `amiram/smart-room/telemetry` | Publish | נתוני חיישנים |
-| `amiram/smart-room/status` | Subscribe | סטטוס מערכת |
-| `amiram/smart-room/control/mode` | Publish | שליטה במצב (auto/manual) |
-| `amiram/smart-room/actuator/relay/cmd` | Publish | פקודות ריליי |
-| `amiram/smart-room/actuator/relay/state` | Subscribe | מצב ריליי |
+| `smart-home/telemetry` | Publish | נתוני חיישנים |
+| `smart-home/status` | Subscribe | סטטוס מערכת |
+| `smart-home/control/mode` | Publish | שליטה במצב (auto/manual) |
+| `smart-home/actuator/relay/cmd` | Publish | פקודות ריליי |
+| `smart-home/actuator/relay/state` | Subscribe | מצב ריליי |
 
 ---
 
@@ -323,7 +323,7 @@ pip install -r requirements.txt --force-reinstall
 ## 📝 הערות חשובות
 
 - ⚠️ **MQTT Broker ציבורי** - המערכת משתמשת ב-HiveMQ הציבורי. לפרודקשן, מומלץ להשתמש ב-broker פרטי.
-- 💾 **שמירת נתונים** - הנתונים נשמרים ב-SQLite מקומי (`smart_room.db`)
+- 💾 **שמירת נתונים** - הנתונים נשמרים ב-SQLite מקומי (`smart_home.db`)
 - 🔐 **אבטחה** - מערכת ההתחברות היא בסיסית. לפרודקשן, הוסף אימות חזק יותר.
 - 📊 **ביצועים** - המערכת מיועדת לניטור מספר מוגבל של חדרים. לקנה מידה גדול, שקול שיפורים.
 
@@ -356,7 +356,9 @@ pip install -r requirements.txt --force-reinstall
 
 ## 👤 מחבר
 
-**Amiram** - פרויקט IoT לקורס
+**Tomer Antebi** - פרויקט IoT 
+**Inon Reany**
+לקורס
 
 ---
 
